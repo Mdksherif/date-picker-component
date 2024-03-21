@@ -1,0 +1,115 @@
+.date-picker {
+    position: relative;
+  }
+  
+  .selected-date {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .selected-date:hover {
+    background-color: #f0f0f0;
+  }
+  
+//   .calendar {
+//     position: absolute;
+//     top: calc(100% + 5px);
+//     left: 0;
+//     z-index: 1000;
+//     background-color: #fff;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     display: none;
+//   }
+  
+//   .calendar.active {
+//     // display: block;
+//   }
+  
+  .month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #008DDA;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  .day {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+  }
+
+  .year {
+    margin-bottom: 10px;
+  }
+  
+  .year select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 25%;
+  }
+
+  
+.day-of-week,
+.day {
+  padding: 10px;
+  text-align: center;
+}
+
+.day-of-week {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.day:hover {
+  background-color: #ddd;
+}
+
+.time-picker {
+    display: flex;
+    align-items: center;
+}
+
+.time-picker input[type="number"],
+.time-picker select {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.time-picker input[type="number"] {
+    width: 50px;
+}
+
+.time-picker select {
+    width: 70px;
+}
+
+  
+  

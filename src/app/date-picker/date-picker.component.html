@@ -1,0 +1,35 @@
+<div class="date-picker">
+    <div class="selected-date" (click)="toggleCalendar()">{{ selectedDate ? selectedDate : 'Select Date' }}</div>
+   <div><br>
+    <div class="time-picker" *ngIf="showCalendar">
+        <br><br><br><label >Enter Time in Hours : </label>
+         <input type="number" [(ngModel)]="selectedHour" min="0" max="23" placeholder="Hour">
+         :
+         <input type="number" [(ngModel)]="selectedMinute" min="0" max="59" placeholder="Minute">
+         <select [(ngModel)]="selectedPeriod">
+             <option value="AM">AM</option>
+             <option value="PM">PM</option>
+         </select>
+     </div><br><br>
+     <div class="calendar" *ngIf="showCalendar">
+       
+         <div class="month">
+             <div class="prev" (click)="prevMonth()">&#10094;</div>
+             <div class="month-name">{{ months[currentMonth] }}</div>
+             <div class="next" (click)="nextMonth()">&#10095;</div>
+         </div>
+         <div class="year">  
+             <select [(ngModel)]="selectedYear" (change)="changeYear(selectedYear)">
+                 <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+             </select>
+         </div>
+         
+         <div class="days">
+             <div class="day-of-week" *ngFor="let day of dayInWeek">{{ day }}</div> <!-- Display days of the week -->
+             <div class="day" *ngFor="let day of daysInMonth" (click)="day !== -1 && selectDate(day)">{{ day !== -1 ? day : '' }}
+         </div>
+     </div>
+   </div> 
+   
+    
+</div>

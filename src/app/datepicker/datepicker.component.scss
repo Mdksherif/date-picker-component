@@ -1,0 +1,17 @@
+:host {
+    display: inline-block;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+    background-color: #f8f8f8;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}

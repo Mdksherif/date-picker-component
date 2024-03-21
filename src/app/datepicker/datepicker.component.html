@@ -1,0 +1,24 @@
+<input type="date" [min]="minDate" [max]="maxDate" (change)="onDateChange($event)">
+
+<!-- <div class="date-picker">
+    <input type="text" [placeholder]="placeholder" [(ngModel)]="selectedDate" (focus)="showCalendar = true">
+    <div class="calendar" *ngIf="showCalendar">
+      <div class="calendar-grid">
+      </div>
+    </div>
+  </div> -->
+  
+  <!-- <div class="date-picker">
+    <div class="selected-date" (click)="toggleCalendar()">{{ selectedDate ? selectedDate : 'Select Date' }}</div>
+    <div class="calendar" *ngIf="showCalendar">
+      <div class="month">
+        <div class="prev" (click)="prevMonth()">&#10094;</div>
+        <div class="month-name">{{ months[currentMonth] }}</div>
+        <div class="next" (click)="nextMonth()">&#10095;</div>
+      </div>
+      <div class="days">
+        <div class="day" *ngFor="let day of daysInMonth" (click)="selectDate(day)">{{ day }}</div>
+      </div>
+    </div>
+  </div> -->
+  
